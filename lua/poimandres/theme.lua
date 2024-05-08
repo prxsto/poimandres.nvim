@@ -248,6 +248,14 @@ function M.get(config)
     TSURI = { fg = groups.link },
     -- TSUnderline = {},
 
+    -- fix treesitter coloring for tsx/jsx
+    ['@variable.builtin.typescript'] = { fg = p.blue2 },
+    ['@lsp.type.variable.typescript'] = { fg = p.text },
+    ['@lsp.type.parameter.typescript'] = { fg = p.text },
+    ['@lsp.type.property.lua'] = { fg = p.text },
+    ['@comment.typescript'] = { fg = p.blueGray3 },
+    ['@comment.documentation.typescript'] = { fg = p.blueGray3 },
+
     -- tsx
     ['@keyword.export.tsx'] = { fg = p.teal1 },
     ['@keyword.import.tsx'] = { fg = p.teal1 },
