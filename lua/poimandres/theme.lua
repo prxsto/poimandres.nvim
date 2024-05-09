@@ -303,14 +303,14 @@ function M.get(config)
     LspCodeLens = { fg = p.blueGray1 }, -- virtual text of code lens
     LspCodeLensSeparator = { fg = p.blueGray3 }, -- separator between two or more code lens
 
-    -- nvim-ts-rainbow
-    rainbowcol1 = { fg = p.blue1 },
-    rainbowcol2 = { fg = p.teal1 },
-    rainbowcol3 = { fg = p.yellow },
-    rainbowcol4 = { fg = p.blue2 },
-    rainbowcol5 = { fg = p.teal2 },
-    rainbowcol6 = { fg = p.pink3 },
-    rainbowcol7 = { fg = p.blue3 },
+    -- rainbow-delimiters.nvim
+    RainbowDelimiterBlue = { fg = p.blue1 },
+    RainbowDelimiterCyan = { fg = p.teal1 },
+    RainbowDelimiterYellow = { fg = p.yellow },
+    RainbowDelimiterViolet = { fg = p.blue2 },
+    RainbowDelimiterOrange = { fg = p.teal2 },
+    RainbowDelimiterRed = { fg = p.pink3 },
+    RainbowDelimiterGreen = { fg = p.blue3 },
 
     -- romgrk/barbar.nvim
     BufferCurrent = { fg = p.text, bg = p.background2 },
