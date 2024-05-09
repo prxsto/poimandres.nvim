@@ -121,7 +121,7 @@ function M.get(config)
     Special = { fg = p.blueGray2 }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     Tag = { fg = p.text }, --    you can use CTRL-] on this
-    Delimiter = { fg = p.pink3 }, --  character that needs attention
+    Delimiter = { fg = p.blueGray1 }, --  character that needs attention
     SpecialComment = { fg = p.blueGray1 }, -- special things inside a comment
     -- Debug         = { }, --    debugging statements
 
@@ -274,6 +274,9 @@ function M.get(config)
     ['@variable.builtin.typescript'] = { fg = p.blue2 },
     ['@lsp.type.variable.typescript'] = { fg = p.text },
     ['@lsp.type.parameter.typescript'] = { fg = p.text },
+    ['@variable.builtin.javascript'] = { fg = p.blue2 },
+    ['@lsp.type.variable.javascript'] = { fg = p.text },
+    ['@lsp.type.parameter.javascript'] = { fg = p.text },
     ['@lsp.type.property.lua'] = { fg = p.text },
     ['@comment.typescript'] = { fg = p.blueGray3 },
     ['@comment.documentation.typescript'] = { fg = p.blueGray3 },
