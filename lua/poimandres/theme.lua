@@ -93,7 +93,7 @@ function M.get(config)
     String = { fg = p.teal1 }, --   a string constant: "this is a string"
     Character = { fg = p.pink3 }, --  a character constant: 'c', '\n'
     Number = { fg = p.teal1 }, --   a number constant: 234, 0xff
-    Boolean = { fg = p.teal1 }, --  a boolean constant: TRUE, false
+    Boolean = { fg = p.pink3 }, --  a boolean constant: TRUE, false
     Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
 
     Identifier = { fg = p.blueGray1 }, -- (preferred) any variable name
