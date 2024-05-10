@@ -37,13 +37,13 @@ function M.get(config)
     Directory = { fg = p.blue3, bg = p.none },
     -- EndOfBuffer = {},
     ErrorMsg = { fg = p.pink3, style = 'bold' },
-    FloatBorder = { fg = groups.border },
+    FloatBorder = { fg = p.blueGray2 },
     FloatTitle = { fg = p.blueGray2 },
     FoldColumn = { fg = p.blueGray2 },
     Folded = { fg = p.text, bg = groups.panel },
     IncSearch = { fg = p.background3, bg = p.blue2 },
     LineNr = { fg = p.blueGray3 },
-    MatchParen = { fg = p.background3, bg = p.blueGray3 },
+    MatchParen = { fg = p.blue2, bg = p.blueGray3 },
     ModeMsg = { fg = p.blue3 },
     MoreMsg = { fg = p.blue3 },
     NonText = { fg = p.blue4 },
@@ -280,6 +280,9 @@ function M.get(config)
     ['@lsp.type.property.lua'] = { fg = p.text },
     ['@comment.typescript'] = { fg = p.blueGray3 },
     ['@comment.documentation.typescript'] = { fg = p.blueGray3 },
+    ['@lsp.type.variable.typescriptreact'] = { fg = p.text },
+    ['@lsp.type.parameter.typescriptreact'] = { fg = p.text },
+    ['@lsp.type.property.typescriptreact'] = { fg = p.text },
 
     -- lua
     luaTSConstructor = { fg = p.blueGray1 },
@@ -452,6 +455,21 @@ function M.get(config)
     NotifyERRORTitle = { link = 'NotifyERRORBorder' },
     NotifyERRORIcon = { link = 'NotifyERRORBorder' },
 
+    -- nvimdev/dashboard-nvim
+    DashboardHeader = { fg = p.blue2 },
+    DashboardFooter = { fg = p.blue2 },
+    DashboardDesc = { fg = p.text },
+    DashboardKey = { fg = p.blue2 },
+    DashboardIcon = { fg = p.blue2 },
+    DashboardShortCut = { fg = p.blue2 },
+
+    -- nvim-neo-tree/neo-tree.nvim
+    NeoTreeModified = { fg = p.teal1 },
+    NeoTreeGitModified = { fg = p.teal1 },
+    NeoTreeGitUntracked = { fg = p.yellow },
+    NeoTreeGitUnstaged = { fg = p.yellow },
+    NeoTreeFileName = { fg = p.text },
+
     -- glepnir/lspsaga.nvim
     TitleString = { fg = p.blue2 },
     TitleIcon = { fg = p.blue2 },
@@ -460,6 +478,7 @@ function M.get(config)
     SagaExpand = { fg = p.teal2 },
     SagaCollapse = { fg = p.teal2 },
     SagaBeacon = { bg = p.yellow },
+
     -- code action
     ActionPreviewNormal = { link = 'SagaNormal' },
     ActionPreviewBorder = { link = 'SagaBorder' },
